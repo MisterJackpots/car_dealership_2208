@@ -134,8 +134,8 @@ RSpec.describe Car do
     dealership.add_car(car_3)
     dealership.add_car(car_4)
     # require 'pry'; binding.pry
-
     expect(dealership.inventory_hash).to eq({"Ford"=> [car_1], "Toyota"=> [car_2, car_3], "Chevrolet"=> [car_4]})
+    # Not quite able to figure out how to convert collection to Hash, excited to learn though!
   end
 
 end
